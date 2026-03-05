@@ -2,8 +2,8 @@
 export default {
     vlan: 150,
     access: {
-        user: 'pavel',
-        pass: 'cvdYP78a'
+        user: 'root',
+        pass: '**********'
     },
     server: {
         ntp: '10.200.1.253',
