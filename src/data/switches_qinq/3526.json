@@ -1,0 +1,9 @@
+{
+  "title": "DES-3526",
+  "port_count": 26,
+  "port_users": "1-24",
+  "port_other": "25-26",
+  "port_uplink": 26,
+  "template": "3526",
+  "firmware": "\nconfig firmware image_id 1 boot_up\nconfig firmware image_id 2 delete\ny\ndownload firmware_fromTFTP 10.90.90.89 sw_fw/DES3526R6_6.20.B30.had image_id 1\n"
+}

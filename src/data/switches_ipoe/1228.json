@@ -1,0 +1,9 @@
+{
+  "title": "DES-1228/ME",
+  "port_count": 28,
+  "port_users": "1-24",
+  "port_other": "25-28",
+  "port_uplink": 26,
+  "template": "1228",
+  "firmware": "\n##### revision A #####\n\nconfig firmware image_id 2 delete\ny\ndownload firmware 10.90.90.89 des-1228me/firmware/rev_A/DES1228ME_1.60.B002.had image_id 1\n\n\n##### revision B #####\n\nconfig firmware image_id 1 boot_up\nconfig firmware image_id 2 delete\ny\ndownload firmware 10.90.90.89 des-1228me/firmware/rev_B/DES1228_Run_2_64_B002.had image_id 1\n"
+}

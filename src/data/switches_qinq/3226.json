@@ -1,0 +1,9 @@
+{
+  "title": "DES-3200-26",
+  "port_count": 26,
+  "port_users": "1-24",
+  "port_other": "25-26",
+  "port_uplink": 26,
+  "template": "3200",
+  "firmware": "\ndownload firmware_fromTFTP 10.90.90.89 src_file sw_fw/DES3200_Run_4_51_B007.had dest_file DES3200_Run_4_51_B007.had\nconfig firmware image DES3200_Run_4_51_B007.had boot_up\ndel c:/runtime.had\nreboot\n# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n# В случае ошибки «Memory is insufficient!», необходимо обновится сначала\n# на промежуточную версию прошивки, а потом на последнюю.\n#\n# download firmware_fromTFTP 10.90.90.89 src_file sw_fw/DES3200R_4.38.B000.had dest_file DES3200R_4.38.B000.had\n# config firmware image DES3200R_4.38.B000.had boot_up\n# dir\n# del c:/runtime.had\n# reboot\n# download firmware_fromTFTP 10.90.90.93 src_file sw_fw/DES3200_Run_4_51_B007.had dest_file DES3200_Run_4_51_B007.had\n# config firmware image DES3200_Run_4_51_B007.had boot_up\n# del c:/DES3200R_4.38.B000.had\n# reboot\n"
+}

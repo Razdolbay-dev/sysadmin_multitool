@@ -1,0 +1,11 @@
+[
+  { "protocol": "TCP", "port": "135", "description": "RPC (Remote Procedure Call)" },
+  { "protocol": "TCP", "port": "593", "description": "RPC (Remote Procedure Call)" },
+  { "protocol": "UDP", "port": "137", "description": "SMB/CIFS" },
+  { "protocol": "UDP", "port": "138", "description": "SMB/CIFS" },
+  { "protocol": "TCP", "port": "139", "description": "SMB/CIFS" },
+  { "protocol": "TCP", "port": "445", "description": "SMB/CIFS" },
+  { "protocol": "UDP", "port": "1900", "description": "UPnP/SSDP" },
+  { "protocol": "TCP", "port": "2869", "description": "UPnP/SSDP" },
+  { "protocol": "UDP", "port": "5355", "description": "LLMNR (Link-Local Multicast Name Resolution)" }
+]
